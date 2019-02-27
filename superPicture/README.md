@@ -3,6 +3,7 @@
 
 ## 用法
 1. html模板
+	```
     <div id="wrap">
         <ul>
             <li><img src="" alt=""></li>
@@ -13,11 +14,14 @@
             <li><img src="" alt=""></li>
         </ul>
     </div>
+    ```
 
 2. js调用
+	```
     new Picture({
         el: "#wrap"
     })
+    ```
     您只需这一行js代码即可创建一个图片轮播的功能
 
 3. 参数配置
@@ -32,9 +36,11 @@
 
 ## 说明
 html模板中的子元素不限于是ul包裹li的格式；可以是任何格式的包裹如：
+	```
     <div>
         <div><img src="" alt=""></div>
         <div><img src="" alt=""></div>
         <div><img src="" alt=""></div>
         <div><img src="" alt=""></div>
     </div>
+    ```
