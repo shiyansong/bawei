@@ -70,3 +70,13 @@ export const deleteLike = target => {
     url: `/app/v1_0/article/likings/${target}`
   })
 }
+
+/**
+ * 获取用户收藏文章列表
+*/
+export const getUserCollection = (url, params) => {
+  return request({
+    url: `/app/v1_0/${url}`,
+    params
+  })
+}

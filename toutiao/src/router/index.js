@@ -67,6 +67,16 @@ const routes = [
     path: '/user/article/:userId',
     name: 'user-article',
     component: () => import('@/views/user-article')
+  },
+  {
+    path: '/my-article/collect',
+    name: 'collect',
+    component: () => import('@/views/collection-history')
+  },
+  {
+    path: '/my-article/history',
+    name: 'history',
+    component: () => import('@/views/collection-history')
   }
 ]
 

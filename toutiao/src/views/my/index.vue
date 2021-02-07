@@ -54,11 +54,11 @@
     <van-grid class="grid-nav mb-9" :column-num="2" clickable>
       <van-grid-item class="grid-item">
         <i slot="icon" class="toutiao toutiao-shoucang"></i>
-        <span slot="text" class="text">收藏</span>
+        <span slot="text" class="text" @click="goCollectionHistory">收藏</span>
       </van-grid-item>
       <van-grid-item class="grid-item">
         <i slot="icon" class="toutiao toutiao-lishi"></i>
-        <span slot="text" class="text">历史</span>
+        <span slot="text" class="text" @click="goCollectionHistory">历史</span>
       </van-grid-item>
     </van-grid>
     <!-- /宫格导航 -->
@@ -128,6 +128,13 @@ export default {
         this.$router.push({ name: 'follow', params: { userId: this.userInfo.id.toString() } })
       } else {
         this.$router.push({ name: 'fans', params: { userId: this.userInfo.id.toString() } })
+      }
+    },
+    goCollectionHistory (ev) {
+      if (ev.target.innerText === '收藏') {
+        this.$router.push({ name: 'collect' })
+      } else {
+        this.$router.push({ name: 'history' })
       }
     }
   }
