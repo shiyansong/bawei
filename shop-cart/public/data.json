@@ -1,0 +1,34 @@
+[
+  {
+    "title": "香皂",
+    "price": 8,
+    "number": 1,
+    "id": 1,
+    "img": "images/1.jpg",
+    "checked": true
+  },
+  {
+    "title": "牙刷",
+    "price": 9,
+    "number": 1,
+    "id": 2,
+    "img": "images/2.jpg",
+    "checked": false
+  },
+  {
+    "title": "毛巾",
+    "price": 29,
+    "number": 1,
+    "id": 3,
+    "img": "images/3.jpg",
+    "checked": false
+  },
+  {
+    "title": "浴兜子",
+    "price": 30,
+    "number": 1,
+    "id": 4,
+    "img": "images/4.jpg",
+    "checked": false
+  }
+]
