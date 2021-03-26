@@ -11,6 +11,6 @@ require.config({
 
 require(["picture"], function(Picture) {
    new Picture({
-       el: "#wrap"
+      el: "#wrap"
    })
 })
